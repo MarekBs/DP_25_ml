@@ -67,7 +67,7 @@ python train_table.py
 python train_pickup.py
 ```
 
-Podrobnejší popis parametrov, feature selection a hyperparametrov nájdeš v `Manual.txt`.
+Podrobnejší popis parametrov, feature selection a hyperparametrov nájdeš v [Manual.txt](Manual.txt).
 
 ---
 
