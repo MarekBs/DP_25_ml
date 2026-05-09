@@ -185,7 +185,7 @@ Zmena:
 Predvolené dátové adresáre sú relatívne (./data_swipe, ./data_zoom, ...).
 Ak chceš použiť iný adresár:
 
-    python train_swipe.py --data-dir C:/DP_FINAL/DP_25/data/swipe
+    python train_swipe.py --data-dir C:/DP_FINAL/DP_25_ml/data/swipe
 
 
 ================================================================================
