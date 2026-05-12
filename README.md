@@ -182,12 +182,17 @@ Výstup: `gesture_model_zdvihnutie.pkl`
 
 ## Server pre autentifikáciu
 
+**Nainštalovať závislosti servera** (Flask + ML knižnice):
+```bash
+pip install -r requirements_server.txt
+```
+
 **Spustiť server**:
 ```bash
 python server.py
 ```
 
-Server beží na adrese `http://0.0.0.0:5000`. Server a zariadenie s aplikáciou musia byť na **rovnakej sieti**. IP adresu zariadenia so serverom je potrebné nastaviť v zdrojovom kóde aplikácie (`VerifyPickupFragment.kt` – konštanta `SERVER_URL`).
+Server načíta priložený `gesture_model_zdvihnutie.pkl` (Random Forest) a prah pre `pickup` z `optimal_thresholds.json`. Beží na adrese `http://0.0.0.0:5000`. Server a zariadenie s aplikáciou musia byť na **rovnakej sieti**. IP adresu zariadenia so serverom je potrebné nastaviť v zdrojovom kóde aplikácie (`VerifyPickupFragment.kt` – konštanta `SERVER_URL`).
 
 
 ## Ako funguje tréning
