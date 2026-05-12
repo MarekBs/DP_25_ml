@@ -45,6 +45,11 @@ ml_training/
       ├── core.py               – zdieľané funkcie pre multimodálne skripty
       ├── train_swipe.py        – tréning: swipe gesto (dotyk + senzory)
       └── train_zoom.py         – tréning: zoom/pinch gesto (dotyk + senzory)
+
+gesture_model_zdvihnutie.pkl    – natrénovaný model (Random Forest) pre autentifikáciu
+optimal_thresholds.json         – optimálne prahy pre všetky modely
+server.py                       – autentifikačný server
+requirements_server.txt         – závislosti servera
 ```
 
 Výstupné `.pkl` súbory sa uložia do priečinka, z ktorého sa skript spúšťa.
