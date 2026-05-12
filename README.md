@@ -62,7 +62,7 @@ python train_<gesto>.py
 
 Dostupné gestá: `swipe`, `zoom`, `walk`, `table`, `pickup`
 
-Použijú sa **všetky príznaky** a **optimálne hyperparametre uložené v `training.py`** (funkcia `make_models()`). Ak chceš zmeniť hyperparametre modelov (napr. po novom Optuna behu), uprav hodnoty priamo v `training.py` a znovu spusti tréningový skript.
+Použijú sa **všetky príznaky** a **optimálne hyperparametre uložené v `training.py`** (funkcia `make_models()`). Ak chceš zmeniť hyperparametre modelov (napr. po novom Optuna behu, alebo pôvodné základné), uprav hodnoty priamo v `training.py` a znovu spusti tréningový skript.
 
 Multimodálne varianty (dotyk + senzory) sú dostupné iba pre `swipe` a `zoom`:
 
