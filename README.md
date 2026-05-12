@@ -166,6 +166,23 @@ python train_walk.py --window-size <velkost> --window-step <krok>
 
 ---
 
+**1. Natrénovať model pre gesto zdvihnutia k uchu:**
+```bash
+cd ml_training
+python train_pickup.py --fs full --model SVM
+```
+Výstup: `gesture_model_zdvihnutie.pkl`
+
+## Server pre autentifikáciu
+
+**2. Spustiť server**:
+```bash
+python server.py
+```
+
+Server beží na adrese `http://0.0.0.0:5000`. Server a zariadenie s aplikáciou musia byť na **rovnakej sieti**. IP adresu zariadenia so serverom je potrebné nastaviť v zdrojovom kóde aplikácie (`VerifyPickupFragment.kt` – konštanta `SERVER_URL`).
+
+
 ## Ako funguje tréning
 
 Každý skript vyhodnotí 4 algoritmy: SVM, Random Forest, XGBoost, KNN. Pre každého používateľa sa natrénuje samostatný model (prístup 1-vs-all) – model sa učí rozoznať "toto som ja" od "toto nie som ja".
