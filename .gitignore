@@ -2,3 +2,5 @@
 *.pyc
 *.pkl
 .DS_Store
+serviceAccountKey.json
+ml_training/optimal_thresholds.json
