@@ -49,6 +49,8 @@ ml_training/
 
 Výstupné `.pkl` súbory sa uložia do priečinka, z ktorého sa skript spúšťa.
 
+> **Poznámka:** V repozitári je priložený natrénovaný model `gesture_model_zdvihnutie.pkl` (Random Forest), ktorý sa používa na autentifikáciu. Optimálne prahy pre tento aj ostatné modely sú v `optimal_thresholds.json`.
+
 ---
 
 ##  Základný tréning
