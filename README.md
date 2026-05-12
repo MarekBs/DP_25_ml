@@ -182,7 +182,7 @@ Výstup: `gesture_model_zdvihnutie.pkl`
 
 ## Server pre autentifikáciu
 
-**2. Spustiť server**:
+**Spustiť server**:
 ```bash
 python server.py
 ```
