@@ -71,6 +71,36 @@ Dostupné gestá: `swipe`, `zoom`, `walk`, `table`, `pickup`.
 
 Ak chcete zmeniť hyperparametre modelov (napr. po novom Optuna behu, alebo na pôvodné základné), uprav hodnoty priamo v `training.py` a znovu spusti tréningový skript.
 
+### Základné nastavenie modelov
+
+Funkcia `make_models()` v `training.py` definuje základné nastavenie modelov pre tréning so základnými hyperparametrami (každý model je zabalený v `Pipeline` so `StandardScaler`):
+
+```python
+def make_models(params=None):
+    p = params or {}
+    return {
+        "SVM": Pipeline([
+            ("scaler", StandardScaler()),
+            ("clf", SVC(kernel="rbf", C=1.0, gamma="scale", probability=True, random_state=42))
+        ]),
+        "Random Forest": Pipeline([
+            ("scaler", StandardScaler()),
+            ("clf", RandomForestClassifier(n_estimators=100, random_state=42, n_jobs=-1))
+        ]),
+        "XGBoost": Pipeline([
+            ("scaler", StandardScaler()),
+            ("clf", XGBClassifier(n_estimators=100, max_depth=6, learning_rate=0.3,
+                                   eval_metric="logloss", random_state=42, n_jobs=-1))
+        ]),
+        "KNN": Pipeline([
+            ("scaler", StandardScaler()),
+             ("clf", KNeighborsClassifier(n_neighbors=5))
+        ]),
+    }
+```
+
+Toto sú východiskové (basic) hyperparametre – ak chceš použiť výsledky z Optuna, prepíš hodnoty v tejto funkcii.
+
 Multimodálne varianty (dotyk + senzory) sú dostupné iba pre `swipe` a `zoom`:
 
 ```bash
