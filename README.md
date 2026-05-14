@@ -200,13 +200,6 @@ python train_walk.py --window-size <velkost> --window-step <krok>
 
 ---
 
-**1. Natrénovať model pre gesto zdvihnutia k uchu:**
-```bash
-cd ml_training
-python train_pickup.py --fs full --model SVM
-```
-Výstup: `gesture_model_zdvihnutie.pkl`
-
 ## Server pre autentifikáciu
 
 **Nainštalovať závislosti servera** (Flask + ML knižnice):
