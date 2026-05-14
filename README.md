@@ -99,7 +99,7 @@ def make_models(params=None):
     }
 ```
 
-Toto sú východiskové (basic) hyperparametre – ak chceš použiť výsledky z Optuna, prepíš hodnoty v tejto funkcii.
+Toto sú východiskové (basic) hyperparametre – ak chcete použiť výsledky z Optuna, prepíšte hodnoty v tejto funkcii.
 
 Multimodálne varianty (dotyk + senzory) sú dostupné iba pre `swipe` a `zoom`:
 
