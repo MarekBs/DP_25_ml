@@ -69,11 +69,8 @@ python train_<gesto>.py
 
 Dostupné gestá: `swipe`, `zoom`, `walk`, `table`, `pickup`.
 
-Ak chcete zmeniť hyperparametre modelov (napr. po novom Optuna behu, alebo na pôvodné základné), uprav hodnoty priamo v `training.py` a znovu spusti tréningový skript.
+Ak chcete spustiť tréning so základnými nastaveniami hyperparametrov, upravte funkciu make_models() v training.py podľa vzoru uvedeného tu a následne spustite skript znovu.
 
-### Základné nastavenie modelov
-
-Tu sú základné nastavenia hyperparametrov:
 
 ```python
 def make_models(params=None):
@@ -99,7 +96,7 @@ def make_models(params=None):
     }
 ```
 
-Toto sú východiskové (basic) hyperparametre – ak chcete použiť iné, prepíšte hodnoty v tejto funkcii.
+Toto sú východiskové (basic) hyperparametre.
 
 Multimodálne varianty (dotyk + senzory) sú dostupné iba pre `swipe` a `zoom`:
 
