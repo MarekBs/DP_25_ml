@@ -69,7 +69,7 @@ python train_<gesto>.py
 
 Dostupné gestá: `swipe`, `zoom`, `walk`, `table`, `pickup`.
 
-Ak chcete spustiť tréning so základnými nastaveniami hyperparametrov, upravte funkciu make_models() v training.py podľa vzoru uvedeného tu a následne spustite skript znovu:.
+Ak chcete spustiť tréning so základnými nastaveniami hyperparametrov, upravte funkciu make_models() v training.py podľa vzoru uvedeného tu a následne spustite skript znovu:
 
 
 ```python
