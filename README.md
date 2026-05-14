@@ -201,7 +201,7 @@ python train_walk.py --window-size <velkost> --window-step <krok>
 ---
 
 ## Server pre autentifikáciu
-Funkčné spustenie nie je triviálne, keže sa jedná len o porototyp, nebol vývoj zameraný na jednoduché spustenie a používanie. Server sa spúšťa lokálne a je NEVYHNUTNÉ meniť ip adresu v zdrojovom kóde na čo treba mať prostredie Android Studio. Po zmene treba vygenerovať súbor apk, ktorý treba následne nainštalovať do mobilu.
+Funkčné spustenie nie je triviálne, keže sa jedná len o porototyp, nebol vývoj zameraný na jednoduché spustenie a používanie. Server sa spúšťa lokálne a je NEVYHNUTNÉ meniť ip adresu v zdrojovom kóde na čo treba mať nainštalované prostredie Android Studio. Po zmene treba vygenerovať súbor apk, ktorý treba následne nainštalovať do mobilu.
 
 **Nainštalovať závislosti servera** (Flask + ML knižnice):
 ```bash
