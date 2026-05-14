@@ -73,7 +73,7 @@ Ak chcete zmeniť hyperparametre modelov (napr. po novom Optuna behu, alebo na p
 
 ### Základné nastavenie modelov
 
-Funkcia `make_models()` v `training.py` definuje základné nastavenie modelov pre tréning so základnými hyperparametrami (každý model je zabalený v `Pipeline` so `StandardScaler`):
+Tu sú základné nastavenia hyperparametrov:
 
 ```python
 def make_models(params=None):
